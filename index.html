@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reviews">Recensioni</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Benvenuti su Job Advisor!</h1>
+        <p>Job Advisor è il sito dove i lavoratori possono condividere la loro esperienza con i datori di lavoro. La nostra missione è aiutare le persone a trovare un ambiente di lavoro sano e trasparente, dove i diritti dei lavoratori sono rispettati. Crediamo nella forza della comunità per rendere il mondo del lavoro più giusto e migliore per tutti!</p>
+        <p>Le recensioni sono un potente strumento di cambiamento. Fai sentire la tua voce!</p>
+    </section>
+
+    <section id="reviews" class="section">
+        <h2>Recensioni dei Lavoratori</h2>
+        <div class="review-form">
+            <h3>Condividi la tua esperienza</h3>
+            <form action="#" method="POST">
+                <label for="company">Nome dell'azienda:</label>
+                <input type="text" id="company" name="company" required>
+
+                <label for="rating">Valutazione:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1 - Molto negativo</option>
+                    <option value="2">2 - Negativo</option>
+                    <option value="3">3 - Neutrale</option>
+                    <option value="4">4 - Positivo</option>
+                    <option value="5">5 - Molto positivo</option>
+                </select>
+
+                <label for="review">Recensione:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <label for="email">La tua email (per confermare l'autenticità della recensione):</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Invia Recensione</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contatti" class="section">
+        <h2>Contattaci</h2>
+        <p>Seguici sui nostri social per restare aggiornato!</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Advisor - Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
