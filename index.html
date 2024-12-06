@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" xml:lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Per la compatibilità con IE -->
     <title>Job Advisor</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,56 +11,58 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#reviews">Recensioni</a></li>
-                <li><a href="#contatti">Contatti</a></li>
+                <li><a href="#home" aria-label="Vai alla home">Home</a></li>
+                <li><a href="#reviews" aria-label="Vai alla sezione recensioni">Recensioni</a></li>
+                <li><a href="#contatti" aria-label="Vai alla sezione contatti">Contatti</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="section">
-        <h1>Benvenuti su Job Advisor!</h1>
-        <p>Job Advisor è il sito dove i lavoratori possono condividere la loro esperienza con i datori di lavoro. La nostra missione è aiutare le persone a trovare un ambiente di lavoro sano e trasparente, dove i diritti dei lavoratori sono rispettati. Crediamo nella forza della comunità per rendere il mondo del lavoro più giusto e migliore per tutti!</p>
-        <p>Le recensioni sono un potente strumento di cambiamento. Fai sentire la tua voce!</p>
-    </section>
+    <main>
+        <section id="home" class="section">
+            <h1>Benvenuti su Job Advisor!</h1>
+            <p>Job Advisor è il sito dove i lavoratori possono condividere la loro esperienza con i datori di lavoro. La nostra missione è aiutare le persone a trovare un ambiente di lavoro sano e trasparente, dove i diritti dei lavoratori sono rispettati. Crediamo nella forza della comunità per rendere il mondo del lavoro più giusto e migliore per tutti!</p>
+            <p>Le recensioni sono un potente strumento di cambiamento. Fai sentire la tua voce!</p>
+        </section>
 
-    <section id="reviews" class="section">
-        <h2>Recensioni dei Lavoratori</h2>
-        <div class="review-form">
-            <h3>Condividi la tua esperienza</h3>
-            <form action="#" method="POST">
-                <label for="company">Nome dell'azienda:</label>
-                <input type="text" id="company" name="company" required>
+        <section id="reviews" class="section">
+            <h2>Recensioni dei Lavoratori</h2>
+            <div class="review-form">
+                <h3>Condividi la tua esperienza</h3>
+                <form action="#" method="POST">
+                    <label for="company">Nome dell'azienda:</label>
+                    <input type="text" id="company" name="company" required aria-required="true" placeholder="Nome dell'azienda">
 
-                <label for="rating">Valutazione:</label>
-                <select id="rating" name="rating" required>
-                    <option value="1">1 - Molto negativo</option>
-                    <option value="2">2 - Negativo</option>
-                    <option value="3">3 - Neutrale</option>
-                    <option value="4">4 - Positivo</option>
-                    <option value="5">5 - Molto positivo</option>
-                </select>
+                    <label for="rating">Valutazione:</label>
+                    <select id="rating" name="rating" required aria-required="true">
+                        <option value="1">1 - Molto negativo</option>
+                        <option value="2">2 - Negativo</option>
+                        <option value="3">3 - Neutrale</option>
+                        <option value="4">4 - Positivo</option>
+                        <option value="5">5 - Molto positivo</option>
+                    </select>
 
-                <label for="review">Recensione:</label>
-                <textarea id="review" name="review" rows="4" required></textarea>
+                    <label for="review">Recensione:</label>
+                    <textarea id="review" name="review" rows="4" required aria-required="true" placeholder="Scrivi la tua recensione"></textarea>
 
-                <label for="email">La tua email (per confermare l'autenticità della recensione):</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">La tua email (per confermare l'autenticità della recensione):</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="Inserisci la tua email">
 
-                <button type="submit">Invia Recensione</button>
-            </form>
-        </div>
-    </section>
+                    <button type="submit">Invia Recensione</button>
+                </form>
+            </div>
+        </section>
 
-    <section id="contatti" class="section">
-        <h2>Contattaci</h2>
-        <p>Seguici sui nostri social per restare aggiornato!</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
-    </section>
+        <section id="contatti" class="section">
+            <h2>Contattaci</h2>
+            <p>Seguici sui nostri social per restare aggiornato!</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Visita la nostra pagina Facebook">Facebook</a>
+                <a href="https://twitter.com" target="_blank" aria-label="Visita il nostro profilo Twitter">Twitter</a>
+                <a href="https://linkedin.com" target="_blank" aria-label="Visita il nostro profilo LinkedIn">LinkedIn</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Job Advisor - Tutti i diritti riservati.</p>
